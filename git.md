@@ -4,7 +4,7 @@
 
 ```
 $ vim .bashrc
-_..._
+...
 
 #
 # Lines added for git-prompt
@@ -24,7 +24,7 @@ fi
 ```
 $ ssh-keygen -t ed25519 -C "my_github_email@mail.com"
 Generating public/private ed25519 key pair.
-Enter file in which to save the key (/home/user/.ssh/id_ed25519): /home/alex/.ssh/id_github   
+Enter file in which to save the key (/home/user/.ssh/id_ed25519): /home/user/.ssh/id_github   
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
 Your identification has been saved in /home/user/.ssh/id_github.
