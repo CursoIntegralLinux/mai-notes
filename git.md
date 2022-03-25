@@ -134,3 +134,16 @@ $ git commit -m "Adding updated new_file file"
 ```
 $ git push -u origin user/new_branch
 ```
+
+- Get repo/branch updates list
+
+```
+$ git fetch --all
+```
+
+- Get updates of all branches from the remote
+
+```
+$ git pull --all
+```
+
