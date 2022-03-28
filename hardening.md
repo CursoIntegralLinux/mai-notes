@@ -32,6 +32,7 @@ Secure your system.
 * Enable
 
 ```
+# rm -rf /etc/systemd/system/ctrl-alt-del.target
 # systemctl mask ctrl-alt-del.target
 ```
 
