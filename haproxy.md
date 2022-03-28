@@ -125,3 +125,6 @@ Hello from webserver2
 </body>
 </html>
 ```
+
+## References
+- [Types of Load Balancing](https://es.wikipedia.org/wiki/Equilibrador_de_carga)
