@@ -8,4 +8,5 @@ Repo of mai notes.
 - [git](https://github.com/CursoIntegralLinux/mai-notes/blob/main/git.md)
 - [Hardening](https://github.com/CursoIntegralLinux/mai-notes/blob/main/hardening.md)
 - [iSCSI](https://github.com/CursoIntegralLinux/mai-notes/blob/main/iscsi.md)
+- [Scripts](https://github.com/CursoIntegralLinux/mai-notes/tree/main/scripts)
 - [VMs](https://github.com/CursoIntegralLinux/mai-notes/blob/main/vms.md)
