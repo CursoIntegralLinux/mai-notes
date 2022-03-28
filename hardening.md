@@ -71,13 +71,13 @@ Secure your system.
 * SUID
 
 ```
-# find / -type f -perm /2000 -ls
+# find / -type f -perm /6000 -ls
 ```
 
 * SGID
 
 ```
-# find / -type f -perm /6000 -ls
+# find / -type f -perm /2000 -ls
 ```
 
 ### Login & Password Policy
