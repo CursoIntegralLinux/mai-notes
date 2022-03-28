@@ -98,7 +98,6 @@ Use [`index.html.template`](https://github.com/CursoIntegralLinux/mai-notes/blob
 Hello from [hostname]
 </h1>
 ...
-
 ```
 
 ## Test service
