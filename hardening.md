@@ -174,7 +174,7 @@ Banner /etc/issue
              Require valid-user
          </Directory>
 
-# mkdir /var/www/html/test.example-rh.com/private
+# mkdir /var/www/html/test.example.com/private
 # echo "Texto secreto" > /var/www/html/test.example.com/private/index.html
 
 # systemctl restart httpd
