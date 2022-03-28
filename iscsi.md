@@ -41,10 +41,10 @@ _Internet Small Computer System Interface_ (**iSCSI**) is a TCP/IP-based protoco
 
 ```
 # targetcli /backstores/fileio create storage /srv/iscsi/backingstore
-# targetcli /iscsi create iqn.2021-10.com.example.lab:target1
-# targetcli /iscsi/iqn.2022-10.com.example.lab:target1/tpg1/acls/ \
-  create iqn.2022-10.com.example.lab:client
-# targetcli iscsi/iqn.2022-10.com.example.lab:target1/tpg1/luns/ \
+# targetcli /iscsi create iqn.2022-03.com.example.lab:target1
+# targetcli /iscsi/iqn.2022-03.com.example.lab:target1/tpg1/acls/ \
+  create iqn.2022-03.com.example.lab:client
+# targetcli iscsi/iqn.2022-03.com.example.lab:target1/tpg1/luns/ \
   create /backstores/fileio/storage
 ```
 
@@ -67,7 +67,7 @@ _Internet Small Computer System Interface_ (**iSCSI**) is a TCP/IP-based protoco
 * Add `InitiatorName` to `/etc/iscsi/initiatorname.iscsi`
 
 ```
-# echo "InitiatorName=iqn.2022-10.com.example.lab:client" \
+# echo "InitiatorName=iqn.2022-03.com.example.lab:client" \
   > /etc/iscsi/initiatorname.iscsi
 ```
 
@@ -86,3 +86,17 @@ node.session.initial_login_retry_max = 2
 ```
 # iscsiadm -m discovery -t st -p portal.lab.example.com
 ```
+
+### Login iSCSI targets
+
+```
+# iscsiadm -m node -T iqn.2022-03.com.example.lab:target1 -l
+```
+
+## Test Client
+
+```
+# fdisk -l
+```
+
+**NOTE: The LUN appears as part of the local devices managed by the operating system, for example, as the `/dev/sda` disk.**
