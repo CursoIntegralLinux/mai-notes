@@ -125,6 +125,26 @@ Secure your system.
 * Limit access to resources
     * `/etc/security/limits.conf`
 
+### Network
+
+* Use static IP Address
+
+```
+# cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+DEVICE="eth0"
+BOOTPROTO="none"
+ONBOOT="yes"
+TYPE="Ethernet"
+USERCTL="yes"
+PEERDNS="yes"
+IPV6INIT="no"
+IPADDR=192.168.0.197
+PREFIX=24
+GATEWAY=192.168.0.1
+DNS1=192.168.0.137
+```
+
+
 ### SSH
 
 * SSH Keys
